@@ -30,3 +30,8 @@ Install the explorer hat:
 Turn on I2C
 
 `sudo rasp-config` it's in Networking.
+
+Installed pip3:
+
+`sudo apt-get install python3-pip`
+
