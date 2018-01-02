@@ -64,18 +64,15 @@ def move(direction):
         explorerhat.motor.one.stop()
         explorerhat.motor.two.stop()
 
-try: 
-    while True:
-        keyp = readkey()
-        if keyp == UP:
-            move('f')
-        elif keyp == DOWN:
-            move('b')
-        elif keyp == RIGHT:
-            move('r')
-        elif keyp == LEFT:
-            move('l')
-        elif ord(keyp) == 3:
-            break
-except:
-    print("Uh oh")
+while True:
+    keyp = readkey()
+    if keyp == UP:
+        move('f')
+    elif keyp == DOWN:
+        move('b')
+    elif keyp == RIGHT:
+        move('r')
+    elif keyp == LEFT:
+        move('l')
+    elif ord(keyp) == 3:
+        break
