@@ -77,3 +77,5 @@ try:
             move('l')
         elif ord(keyp) == 3:
             break
+except:
+    print("Uh oh")
