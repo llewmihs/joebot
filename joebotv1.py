@@ -18,8 +18,18 @@ def move(direction):
         print("Moving backward...")
     if direction == "left":
         print("turning left...")
+        explorerhat.motor.one.forward()
+        explorerhat.motor.two.backward()
+        sleep(0.5)
+        explorerhat.motor.one.stop()
+        explorerhat.motor.two.stop()
     if direction == "right":
         print("Turning right...")
+        explorerhat.motor.one.backward()
+        explorerhat.motor.two.forward()
+        sleep(0.5)
+        explorerhat.motor.one.stop()
+        explorerhat.motor.two.stop()
 
 if __name__ == "__main__":
     while True:
