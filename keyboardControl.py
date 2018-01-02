@@ -1,6 +1,7 @@
 import sys
 import explorerhat
 import termios
+import tty
 
 
 print("Use the arrow keys to move the robot")
