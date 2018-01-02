@@ -2,6 +2,8 @@ import sys
 import explorerhat
 import termios
 import tty
+from time import sleep
+
 
 
 print("Use the arrow keys to move the robot")
